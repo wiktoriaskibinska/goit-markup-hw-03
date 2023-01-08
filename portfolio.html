@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,59 +22,61 @@
   </head>
   <body>
     <header>
-      <section class="header ">
-        <nav class="header_nav">
-          <a href="index.html" class="header_logo"
-            ><span class="logo_first_part">Web</span>Studio</a
-          >
-          <ul class="header_menu_list">
-            <li class="header_menu_item">
-              <a href="" class="header_menu_link">Agencja</a>
+      <section>
+        <div class="container header-container">
+          <nav class="header_nav">
+            <a href="index.html" class="header_logo"
+              ><span class="logo_first_part">Web</span>Studio</a
+            >
+            <ul class="header_menu_list">
+              <li class="header_menu_item">
+                <a href="" class="header_menu_link">Agencja</a>
+              </li>
+              <li class="header_menu_item">
+                <a href="portfolio.html" class="header_menu_link">Portfolio</a>
+              </li>
+              <li class="header_menu_item">
+                <a href="" class="header_menu_link">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header_contact_list">
+            <li class="header_contact_item">
+              <a href="mailto:info@devstudio.com" class="header_contact_link"
+                >info@devstudio.com
+              </a>
             </li>
-            <li class="header_menu_item">
-              <a href="portfolio.html" class="header_menu_link">Portfolio</a>
-            </li>
-            <li class="header_menu_item">
-              <a href="" class="header_menu_link">Kontakt</a>
+            <li class="header_contact_item">
+              <a href="tel:+48111111111" class="header_contact_link"
+                >+48111111111</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="header_contact_list">
-          <li class="header_contact_item">
-            <a href="mailto:info@devstudio.com" class="header_contact_link"
-              >info@devstudio.com
-            </a>
-          </li>
-          <li class="header_contact_item">
-            <a href="tel:+48111111111" class="header_contact_link"
-              >+48111111111</a
-            >
-          </li>
-        </ul>
+        </div>
       </section>
     </header>
 
     <main>
-      <section class=filters_cards>
-        <ul class="filters">
-          <li class="filters_list">
+      <section class="portfolio-filters section">
+        <div class="container footer-container">
+        <ul class="filters_list">
+          <li class="filters_item">
             <button class="filters_button" type="button">Wszystkie</button>
           </li>
-          <li class="filters_list">
+          <li class="filters_item">
             <button class="filters_button" type="button">Strony</button>
           </li>
-          <li class="filters_list">
+          <li class="filters_item">
             <button class="filters_button" type="button">Aplikacje</button>
           </li>
-          <li class="filters_list">
+          <li class="filters_item">
             <button class="filters_button" type="button">Design</button>
           </li>
-          <li class="filters_list">
+          <li class="filters_item">
             <button class="filters_button" type="button">Marketing</button>
           </li>
         </ul>
-      </section>
-      <section class="portfolio">
+
         <ul class="portfolio_list">
           <li class="portfolio_item">
             <figure>
@@ -199,33 +207,38 @@
             </figure>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <a href="" class="footer_logo">
-        <span class="logo_first_part">Web</span>Studio</a
-      >
-      <address>
-        <ul class="footer_list">
-          <li>
-            <a
-              class="footer_link footer-localisation"
-              href="https://goo.gl/maps/kYdDBKaU15SzFSr7A"
-              target="_blank"
-              >m. Warszawa, Aleje Jerozolimskie 21</a
-            >
-          </li>
-          <li>
-            <a class="footer_link" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a class="footer_link" href="tel:+48111111111"> +48 111 111 111</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container footer-container">
+        <a href="" class="footer_logo">
+          <span class="logo_first_part">Web</span>Studio</a
+        >
+        <address>
+          <ul class="footer_list">
+            <li>
+              <a
+                class="footer_link footer-localisation"
+                href="https://goo.gl/maps/kYdDBKaU15SzFSr7A"
+                target="_blank"
+                >m. Warszawa, Aleje Jerozolimskie 21</a
+              >
+            </li>
+            <li>
+              <a class="footer_link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a class="footer_link" href="tel:+48111111111">
+                +48 111 111 111</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
